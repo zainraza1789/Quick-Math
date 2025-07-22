@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Quick Math </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #number {
+            position: absolute;
+            top: 100px;
+            left: 7px;
+            padding: 18px 40px;
+            border-radius: 40px;
+            border: none;
+            font-size: 20px;
+            text-align: right;
+
+        }
+    </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center vh-100 bg-light">
+    <!-- Setting button -->
+    <div class="screen-container">
+        <i class="fas fa-cog" id="setting-btn"></i>
+
+        <!-- Input  -->
+        <input type="text" id="number" readonly>
+
+        <!-- Divider -->
+        <hr class="divider-line">
+
+        <!-- Options container  -->
+        <i class="fas fa-exchange-alt" id="currency"></i>
+        <i class="fa fa-history" id="history"></i>
+        <i class="fas fa-table" id="table"></i>
+
+        <!-- First Line Button Container -->
+        <div>
+            <button id="AC" onclick="clearInput()">AC</button>
+            <button id="cross" onclick="cross()"> &#10005;</button>
+            <button id="plus">+/_</button>
+            <button id="divide" onclick="divide()">&#247;</button>
+            <button id="multiply" onclick="multiply()">x    </button>
+            <button id="minus" onclick="minus()">-</button>
+            <button id="add" onclick="add()">+</button>
+            <button id="equal" onclick="calculate()">=</button>
+        </div>
+
+        <!-- Numbers Container  -->
+        <button id="seven" onclick="addnumber(7)">7</button>
+        <button id="four" onclick="addnumber(4)">4</button>
+        <button id="one" onclick="addnumber(1)">1</button>
+        <button id="percentage" onclick="percentage()">%</button>
+        <button id="eight" onclick="addnumber(8)">8</button>
+        <button id="five" onclick="addnumber(5)">5</button>
+        <button id="two" onclick="addnumber(2)">2</button>
+        <button id="zero" onclick="addnumber(0)">0</button>
+        <button id="nine" onclick="addnumber(9)">9</button>
+        <button id="six" onclick="addnumber(6)">6</button>
+        <button id="three" onclick="addnumber(3)">3</button>
+        <button id="dot" onclick="dot()">.</button>
+    </div>
+    <!-- Script  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+
+        function addnumber(num) {
+            let input = document.getElementById("number");
+            input.value += num;
+        }
+        function clearInput() {
+            document.getElementById("number").value = '';
+            input.value += "";
+        }
+        function divide() {
+            let input = document.getElementById("number");
+            input.value += "÷";
+        }
+        function multiply() {
+            let input = document.getElementById("number");
+            input.value += "x";
+        }
+        function minus() {
+            let input = document.getElementById("number");
+            input.value += "-";
+        }
+        function add() {
+            let input = document.getElementById("number");
+            input.value += "+";
+        }
+        function percentage() {
+            let input = document.getElementById("number");
+            input.value += "%";
+        }
+        function dot() {
+            let input = document.getElementById("number");
+            input.value += ".";
+        }
+        function cross() {
+    let input = document.getElementById("number");
+    input.value = input.value.slice(0, -1); 
+}
+function calculate() {
+    let input = document.getElementById("number");
+    let expression = input.value;
+
+    // Operator Replace 
+    if (expression.includes("÷")) {
+        expression = expression.replace(/÷/g, "/");
+    }
+
+    if (expression.includes("x")) {
+        expression = expression.replace(/x/g, "*");
+    }
+
+    if (expression.includes("%")) {
+        expression = expression.replace(/%/g, "/100");
+    }
+
+    if (expression !== "") {
+        try {
+            let result = eval(expression);
+            input.value = result;
+        } catch (error) {
+            input.value = "Error";
+        }
+    } else {
+        input.value = "";
+    }
+}
+
+
+    </script>
+    <script src="key.js"></script>
+
+</body>
+
+</html>

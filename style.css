@@ -1,0 +1,374 @@
+    .screen-container {
+            width: 320px;
+            height: 600px;
+            border-radius: 30px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+        }
+
+        #setting-btn {
+            position: absolute;
+            top: 40px;
+            right: 10px;
+            font-size: 18px;
+            color: #000;
+            cursor: pointer;
+        }
+
+        .divider-line {
+            position: absolute;
+            width: 280px;
+            bottom: 300px;
+            left: 20px;
+            opacity: 0.2;
+        }
+
+        #currency {
+            position: absolute;
+            top: 250px;
+            left: 125px;
+            width: 30px;
+            cursor: pointer;
+            font-size: 16px;
+
+        }
+
+        #history {
+            position: absolute;
+            top: 250px;
+            left: 81px;
+            width: 50px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+
+        #table {
+            position: absolute;
+            top: 250px;
+            left: 30px;
+            width: 50px;
+            font-size: 16px;
+            cursor: pointer;
+
+        }
+
+        #AC {
+            position: absolute;
+            background-color: rgba(0, 0, 255, 0.11);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: rgba(0, 0, 255, 0.705);
+            top: 300px;
+            padding: 20;
+            margin: 3px;
+            font-weight: 700;
+        }
+
+        #cross {
+            position: absolute;
+            background-color: rgba(0, 0, 255, 0.11);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: rgba(0, 0, 255, 0.705);
+            top: 300px;
+            padding: 20;
+            margin: 3px;
+            font-weight: 700;
+            left: 90px;
+        }
+
+
+        #plus {
+            position: absolute;
+            background-color: rgba(0, 0, 255, 0.11);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: rgba(0, 0, 255, 0.705);
+            top: 300px;
+            padding: 20;
+            margin: 3px;
+            font-weight: 700;
+            left: 160px;
+
+        }
+
+        #divide {
+            position: absolute;
+            background-color: rgba(0, 0, 255, 0.11);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: rgba(0, 0, 255, 0.705);
+            top: 300px;
+            padding: 20;
+            margin: 3px;
+            font-weight: 700;
+            left: 230px;
+            font-size: 20px;
+
+        }
+
+        #multiply {
+            position: absolute;
+            background-color: rgba(0, 0, 255, 0.11);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: rgba(0, 0, 255, 0.705);
+            top: 357px;
+            padding: 20;
+            margin: 3px;
+            font-weight: 700;
+            left: 230px;
+
+        }
+
+        #minus {
+            position: absolute;
+            background-color: rgba(0, 0, 255, 0.11);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: rgba(0, 0, 255, 0.705);
+            top: 414px;
+            padding: 20;
+            margin: 3px;
+            font-weight: 700;
+            left: 230px;
+            font-size: 20px;
+
+        }
+
+        #add {
+            position: absolute;
+            background-color: rgba(0, 0, 255, 0.11);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: rgba(0, 0, 255, 0.705);
+            top: 471px;
+            padding: 20;
+            margin: 3px;
+            font-weight: 700;
+            left: 230px;
+            font-size: 20px;
+
+        }
+
+        #equal {
+            position: absolute;
+            background-color: rgba(15, 17, 172, 0.89);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: rgba(255, 255, 255, 0.705);
+            top: 527px;
+            padding: 20;
+            margin: 3px;
+            font-weight: 700;
+            left: 230px;
+            font-size: 20px;
+        }
+
+        /* Numbers Container  */
+        #seven {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 357px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+
+        }
+
+        #four {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 414px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+
+        }
+
+        #one {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 471px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+
+        }
+
+        #percentage {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 528px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+
+        }
+
+        #eight {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 357px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+            left: 90px;
+
+        }
+
+        #five {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 414px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+            left: 90px;
+
+        }
+
+        #two {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 471px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+            left: 90px;
+
+        }
+
+        #zero {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 528px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+            left: 90px;
+
+        }
+
+        #nine {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 357px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+            left: 160px;
+
+        }
+
+        #six {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 414px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+            left: 160px;
+
+        }
+
+        #three {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 471px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+            left: 160px;
+
+        }
+
+        #dot {
+            position: absolute;
+            background-color: rgba(187, 187, 192, 0.315);
+            border-radius: 110px;
+            width: 55px;
+            height: 40px;
+            border: none;
+            color: black;
+            top: 528px;
+            padding: 20;
+            margin: 3px;
+            font-size: 20px;
+            left: 160px;
+
+        }
